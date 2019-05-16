@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>3kar Masr</title>
+	<link rel="stylesheet"  href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/my-style.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> -->
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-md">
+	  <div class="container">
+	  <div class="col-xs-3 col-sm-2">
+	  	<a  href="#">
+			<img src="images/akar-logo.png" width="100%" alt="logo">
+		  	</a>
+	  </div>	
+	  <button class="navbar-toggler hidden-lg hidden-md hidden-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	    <i class="fas fa-bars fa-2x"></i>
+	  </button>
+
+	  <div class="collapse navbar-collapse col-xs-9 col-sm-10 " id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto list-unstyled">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="projects.html">Projects</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="compare_projects.html">Compare</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="projects_edit.html">Properties</a>
+		      </li>
+		      <!-- <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <i class="fas fa-home"></i>
+		          Add Your Property
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="href="projects_edit.html"">Action</a>
+		          <a class="dropdown-item" href="#">Another action</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Something else here</a>
+		        </div>
+		      </li> -->
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i>  Login</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link " href="#"><i class="fas fa-user"></i>  Register</a>
+		      </li>
+		    </ul>
+	  </div>
+	  </div>
+	</nav>
+
+	<!-- Start Header -->
+	<section class="header">
+		<div class="container">
+		
+		<div class="header-content row">
+			<div class="title col-xs-12 col-sm-6 col-md-8">
+				<h1 class="text-uppercase">find your new home easily</h1>
+				<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">properties</a></li>
+				  <li class="active">property name</li>
+				</ol>
+			</div>
+			<div class="header-form col-xs-12 col-sm-6 col-md-4">
+			<form class="col-xs-12">
+				 <div class="form-row">
+				    <div class="form-group col-sm-6 ">
+				      <label class="mr-sm-2" for="CategorySelect">Preference</label>
+				      <select class="custom-select mr-sm-2" id="CategorySelect">
+				        <option selected>Category</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="PropertyStatusSelect">Property Status</label>
+				      <select class="custom-select mr-sm-2" id="PropertyStatusSelect">
+				        <option selected>Property Status</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				  </div>
+
+				  <div class="form-row">
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="PropertyType">Property Type</label>
+				      <select class="custom-select mr-sm-2" id="PropertyType">
+				        <option selected>Types</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="city">City</label>
+				      <select class="custom-select mr-sm-2" id="city">
+				        <option selected>City</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				  </div>
+
+				  <div class="form-row">
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="checkInDate">Check In Dates</label>
+				      <select class="custom-select mr-sm-2" id="checkInDate">
+				        <option selected>mm/dd/yyy</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="checkOutDate">Check Out Dates</label>
+				      <select class="custom-select mr-sm-2" id="checkOutDate">
+				        <option selected>mm/dd/yyy</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				  </div>
+
+				  <div class="form-row">
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="Reigon">Reigon</label>
+				      <select class="custom-select mr-sm-2" id="Reigon">
+				        <option selected>Reigon</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				    <div class="form-group col-sm-6">
+				      <button  type="submit" class="btn">Search</button>
+				    </div>
+				  </div>
+			</form>
+			</div>
+		</div>
+		</div> <!-- container -->
+	</section>
+	<!-- End Header -->
+
+	<!-- Start content -->
+	<section class="content">
+		<div class="container">
+			<div class="row">
+				<!-- Main Content -->
+			    <div class="col-md-8 mainContant col-sm-12">
+			      <div class="info ">
+			      	<div class="title">
+			      		<h2 class="text-capitalize">apartment For Sale In Cairo</h2>
+			      		<span class="text-capitalize"> <i class="fas fa-map-marker-alt"></i> cairo,egypt</span>
+			      	</div>
+			      	<div class="price">
+			      		<h2>EGP 1,420,00</h2>
+			      	</div>	
+			      </div>
+			      <div class="sliderSection">
+			      <div id="slider" class="flexslider">
+					  <ul class="slides">
+					    <li>
+					      <img src="images/property-4.jpg" />
+					    </li>
+					    <li>
+					      <img src="images/property-5.jpg" />
+					    </li>
+					    <li>
+					      <img src="images/property-6.jpg" />
+					    </li>
+					    <li>
+					      <img src="images/property-8.jpg" />
+					    </li>
+					    <!-- items mirrored twice, total of 12 -->
+					  </ul>
+					</div>
+					<div id="carousel" class="flexslider carousel">
+					  <ul class="slides">
+					    <li>
+					      <img src="images/property-4.jpg" />
+					    </li>
+					    <li>
+					      <img src="images/property-5.jpg" />
+					    </li>
+					    <li>
+					      <img src="images/property-6.jpg" />
+					    </li>
+					    <li>
+					      <img src="images/property-8.jpg" />
+					    </li>
+					    <!-- items mirrored twice, total of 12 -->
+					  </ul>
+					</div>
+				</div> <!-- slider -->
+
+				<div class="content-description">
+					<h5 class="text-uppercase">property description</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.sunt in culpa qui officia deserunt mollit anim id est laborum sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+				</div>
+
+				<div class="content-details">
+					<h5 class="text-uppercase">property details</h5>
+					<div class="row">
+						<ul class="col-sm-4 list-unstyled">
+							<li>Property id: 215</li>
+							<li>Price EGP 1,420,00</li>
+							<li>Property type: apartment</li>
+							<li>Bathrooms: 3</li>
+							<li>Bathrooms: 2</li>
+						</ul>
+						<ul class="col-sm-4 list-unstyled">
+							<li>Property lot size: 800ft2</li>
+							<li>Land area 230ft2</li>
+							<li>Year built: 2018</li>
+							<li>Available From: 2018</li>
+							<li>Garages: 2</li>
+						</ul>
+						<ul class="col-sm-4 list-unstyled">
+							<li>Sold: Yes</li>
+							<li>City: Cairo</li>
+							<li>Parking: yes</li>
+							<li>Property owner: john smith</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="content-features">
+					<h5 class="text-uppercase">Features</h5>
+					<div class="row">
+						<ul class="col-sm-4 list-unstyled">
+							<li><i class="fas fa-check fa-xs"></i> Air Conditioning</li>
+							<li><i class="fas fa-check fa-xs"></i> WiFi</li>
+							<li><i class="fas fa-check fa-xs"></i> Swimming Pool</li>
+							<li><i class="fas fa-check fa-xs"></i> Air Conditioning</li>
+							<li><i class="fas fa-check fa-xs"></i> Double Bed</li>
+						</ul>
+						<ul class="col-sm-4 list-unstyled">
+							<li><i class="fas fa-check fa-xs"></i> Telephone</li>
+							<li><i class="fas fa-check fa-xs"></i> Garage</li>
+							<li><i class="fas fa-check fa-xs"></i> Parking</li>
+							<li><i class="fas fa-check fa-xs"></i> TV</li>
+							<li><i class="fas fa-check fa-xs"></i> Home Theater</li>
+						</ul>
+						<ul class="col-sm-4 list-unstyled">
+							<li><i class="fas fa-check fa-xs"></i> Alarm</li>
+							<li><i class="fas fa-check fa-xs"></i> Garage</li>
+							<li><i class="fas fa-check fa-xs"></i> Gym</li>
+							<li><i class="fas fa-check fa-xs"></i> Electric Range</li>
+							<li><i class="fas fa-check fa-xs"></i> Private Space</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="content-location">
+					<h5 class="text-uppercase">property location</h5>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27621.180987328084!2d31.287960939550775!3d30.07563355000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1529903310694" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
+			    </div>
+
+			    <!-- Side Content -->
+			    <div class="col-md-4 sideContent col-sm-12">
+			      <div class="sideContainer">
+			      	<h5 class="text-uppercase">advanced search</h5>
+
+			      	<form>
+			      		<div class="form-group">
+						    <label for="C-category">Category</label>
+						    <select class="form-control" id="C-category">
+						      <option>Area Form</option>
+						      <option>2</option>
+						      <option>3</option>
+						      <option>4</option>
+						      <option>5</option>
+						    </select>
+  						</div>
+  						<div class="form-group">
+						    <label for="C-propertyStatus">Property Status</label>
+						    <select class="form-control" id="C-propertyStatus">
+						      <option>Property Status</option>
+						      <option>2</option>
+						      <option>3</option>
+						      <option>4</option>
+						      <option>5</option>
+						    </select>
+  						</div>
+  						<div class="form-group">
+						    <label for="C-propertyType">Property Type</label>
+						    <select class="form-control" id="C-propertyType">
+						      <option>Property Type</option>
+						      <option>2</option>
+						      <option>3</option>
+						      <option>4</option>
+						      <option>5</option>
+						    </select>
+  						</div>
+  						<div class="form-group">
+						    <label for="C-propertyType">Property Type</label>
+						    <select class="form-control" id="C-propertyType">
+						      <option>Property Type</option>
+						      <option>4</option>
+						      <option>4</option>
+						      <option>4</option>
+						      <option>5</option>
+						    </select>
+  						</div>
+  						<div class="form-group">
+						    <label for="C-Region">Region</label>
+						    <select class="form-control" id="C-Region">
+						      <option>Property Types</option>
+						      <option>4</option>
+						      <option>4</option>
+						      <option>4</option>
+						      <option>5</option>
+						    </select>
+  						</div>
+  						<div class="form-group">
+						    <label for="C-city">Region</label>
+						    <select class="form-control" id="C-city">
+						      <option>Bedrooms</option>
+						      <option>4</option>
+						      <option>4</option>
+						      <option>4</option>
+						      <option>5</option>
+						    </select>
+  						</div>
+  						<div class="form-group">
+					      <label for="C-checkInDate">Check In Dates</label>
+					      <select class="form-control" id="C-checkInDate">
+					        <option selected>dd----yyyy</option>
+					        <option value="1">One</option>
+					        <option value="2">Two</option>
+					        <option value="3">Three</option>
+					      </select>
+				   		</div>
+				   		<div class="form-group">
+					      <label for="C-checkOutDate">Check Out Dates</label>
+					      <select class="form-control" id="C-checkOutDate">
+					        <option selected>dd----yyyy</option>
+					        <option value="1">One</option>
+					        <option value="2">Two</option>
+					        <option value="3">Three</option>
+					      </select>
+				    	</div>
+				    	<button type="submit" class="text-uppercase btn">search</button>
+			      	</form>
+			      	<div class="recent-properties">
+			      		<h5 class="text-uppercase">recent properties</h5>
+				      	<ul class="media-list">
+						  <li class="media">
+						    <div class="media-left">
+						      <a href="#">
+						        <img class="media-object" src="images/sub-property-2.jpg" alt="...">
+						      </a>
+						    </div>
+						    <div class="media-body">
+						      <h4 class="media-heading">Media heading</h4>
+						      <p class="date"><i class="far fa-calendar"></i> 5/10/2018</p>
+						      <p class="price">EGP 645,000</p>
+						    </div>
+						  </li>
+						</ul>
+						<ul class="media-list">
+						  <li class="media">
+						    <div class="media-left">
+						      <a href="#">
+						        <img class="media-object" src="images/sub-property-2.jpg" alt="...">
+						      </a>
+						    </div>
+						    <div class="media-body">
+						      <h4 class="media-heading">Media heading</h4>
+						      <p class="date"><i class="far fa-calendar"></i> 5/10/2018</p>
+						      <p class="price">EGP 645,000</p>
+						    </div>
+						  </li>
+						</ul>
+						<ul class="media-list">
+						  <li class="media">
+						    <div class="media-left">
+						      <a href="#">
+						        <img class="media-object" src="images/sub-property-2.jpg" alt="...">
+						      </a>
+						    </div>
+						    <div class="media-body">
+						      <h4 class="media-heading">Media heading</h4>
+						      <p class="date"><i class="far fa-calendar"></i> 5/10/2018</p>
+						      <p class="price">EGP 645,000</p>
+						    </div>
+						  </li>
+						</ul>
+
+
+						
+						
+			      	</div>			      	
+			      </div>
+			    </div>
+			</div>
+		</div>
+	</section>
+	<!-- End content -->
+
+	<!-- Start Footer -->
+	<section class="footer">
+		<div class="container">
+			<div class="title text-center">
+				<img src="images/akar-logo.png">
+				<div class="spans row ">
+					<div class="col-xs-12">
+						<ul>
+							<li>Address: cairo,Egypt</li>
+							<li>Email: info@3karMasr.com</li>
+							<li>Phone: 123456789</li>
+						</ul>
+					</div>
+
+					<!-- <div class="col-md-4 col-sm-12"><span>Address: cairo,Egypt</span></div>
+					<div class="col-md-4 col-sm-12"><span>Email: info@3karMasr.com</span></div>
+					<div class="col-md-4 col-sm-12"><span>Phone: 123456789</span></div> -->
+				</div>
+			</div>
+			<div class="row apartments">
+				<ul class="col-sm-4 col-sm-12 list-unstyled">
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+				</ul>
+				<ul class="col-sm-4 col-sm-12 list-unstyled">
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+				</ul>
+				<ul class="col-sm-4 col-sm-12 list-unstyled">
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+				</ul>
+			</div>
+
+			<div class="socialLinks text-center">
+				<ul>
+					<li><i class="i fab fa-facebook-f"></i></li>
+					<li><i class="i fab fa-google-plus-g"></i></li>
+					<li><i class="i fab fa-linkedin-in"></i></li>
+					<li><i class="i fab fa-twitter"></i></li>
+					<li><i class="i fab fa-twitter"></i></li>
+				</ul>
+			</div>
+
+			<div class="copywrites row text">
+				<ul class="list-unstyled col-md-8 col-sm-12">
+					<li class="text-capitalize"><a href="#">home</a></li>
+					<li class="text-capitalize"><a href="#">About Us</a></li>
+					<li class="text-capitalize"><a href="#">Projects</a></li>
+					<li class="text-capitalize"><a href="#">Contact Us</a></li>
+					<li class="text-capitalize"><a href="#">Terms &amp; conditions</a></li>
+				</ul>
+				<span class="col-md-4 col-xs-12 text-center">3kar Masr &copy;  2018, All Rights Reserved</span>
+			</div>
+		</div>
+	</section>
+	<!-- End Footer -->
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fontawesome-all.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

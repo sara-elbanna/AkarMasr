@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>3kar Masr</title>
+	<link rel="stylesheet"  href="css/bootstrap.css">
+	
+<!-- 	<link rel="stylesheet" href="css/flexslider.css"> 
+	<link rel="stylesheet" href="css/slick.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/my-style.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> -->
+</head>
+<body>
+	<nav class="navbar navbar-expand-md">
+	  <div class="container">
+	  <div class="col-xs-3 col-sm-2">
+	  	<a  href="#">
+			<img src="images/akar-logo.png" width="100%" alt="logo">
+		  	</a>
+	  </div>	
+	  <button class="navbar-toggler hidden-lg hidden-md hidden-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	    <i class="fas fa-bars fa-2x"></i>
+	  </button>
+
+	  <div class="collapse navbar-collapse col-xs-9 col-sm-10 " id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto list-unstyled">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="projects.html">Projects</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="compare_projects.html">Compare</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="projects_edit.html">Properties</a>
+		      </li>
+		     
+		      <!-- <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <i class="fas fa-home"></i>
+		          Add Your Property
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="href="projects_edit.html"">Action</a>
+		          <a class="dropdown-item" href="#">Another action</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Something else here</a>
+		        </div>
+		      </li> -->
+
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i>  Login</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link " href="#"><i class="fas fa-user"></i>  Register</a>
+		      </li>
+		    </ul>
+	  </div>
+	  </div>
+	</nav>
+	<!-- Header -->
+	<section class="header">
+		<div class="container">
+		
+		<div class="header-content row">
+			<div class="title col-xs-12 col-sm-6 col-md-8">
+				<h1 class="text-uppercase">find your new home easily</h1>
+				<ol class="breadcrumb">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="projects.html">projects</a></li>
+				  <li class="active">compare</li>
+				</ol>
+			</div>
+			<div class="header-form col-xs-12 col-sm-6 col-md-4">
+			<form class="col-xs-12">
+				 <div class="form-row">
+				    <div class="form-group col-sm-6 ">
+				      <label class="mr-sm-2" for="CategorySelect">Preference</label>
+				      <select class="custom-select mr-sm-2" id="CategorySelect">
+				        <option selected>Category</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="PropertyStatusSelect">Property Status</label>
+				      <select class="custom-select mr-sm-2" id="PropertyStatusSelect">
+				        <option selected>Property Status</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				  </div>
+
+				  <div class="form-row">
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="PropertyType">Property Type</label>
+				      <select class="custom-select mr-sm-2" id="PropertyType">
+				        <option selected>Types</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="city">City</label>
+				      <select class="custom-select mr-sm-2" id="city">
+				        <option selected>City</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				  </div>
+
+				  <div class="form-row">
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="checkInDate">Check In Dates</label>
+				      <select class="custom-select mr-sm-2" id="checkInDate">
+				        <option selected>mm/dd/yyy</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="checkOutDate">Check Out Dates</label>
+				      <select class="custom-select mr-sm-2" id="checkOutDate">
+				        <option selected>mm/dd/yyy</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				  </div>
+
+				  <div class="form-row">
+				    <div class="form-group col-sm-6">
+				      <label class="mr-sm-2" for="Reigon">Reigon</label>
+				      <select class="custom-select mr-sm-2" id="Reigon">
+				        <option selected>Reigon</option>
+				        <option value="1">One</option>
+				        <option value="2">Two</option>
+				        <option value="3">Three</option>
+				      </select>
+				    </div>
+				    <div class="form-group col-sm-6">
+				      <button  type="submit" class="btn">Search</button>
+				    </div>
+				  </div>
+			</form>
+			</div>
+		</div>
+		</div> <!-- container -->
+	</section>
+	<!-- Content -->
+	<section class="contact-us">
+		<div class="container">
+			<div class="contactContainer">
+				<div class="info">
+					<div class="title">
+						<h3><i class="fa fa-globe"></i> Our Office</h3>
+					</div>
+					<div class="details row">
+							<div class="office col-md-6 col-xs-12">
+								<h4><strong>Cairo Office : </strong></h4>
+								<div>
+									<p><strong>Location :</strong><span>10 street 23 , Maadi, Cairo</span></p>
+									<p><strong>Mobile :</strong><span>01099956569</span></p>
+									<p><strong>Home :</strong><span>02-27510626</span></p>
+								</div>
+							</div>
+							<div class="office col-md-6 col-xs-12">
+								<h4><strong>Alexandria Office : </strong></h4>
+								<div>
+									<p><strong>Location :</strong><span>32 Fawzi Moaaz street (Saqara 10) building Floor 3  |  Smouha , Alexanderia</span></p>
+									<p><strong>Mobile :</strong><span>01020020300</span></p>
+									<p><strong>Home :</strong><span>03-4245291</span></p>
+								</div>
+
+								<!-- <span><strong>Alexandria Office : </strong></span>
+								<span> 32 Fawzi Moaaz street (Saqara 10) building Floor 3  <big>|</big>  </span>
+								<span> Smouha , Alexanderia  <big>|</big>  </span>
+								<span> 01020020300  <big>|</big>  </span>
+								<span> 03-4245291</span> -->
+							</div>					
+					</div>
+				</div>
+					<div class="box">
+						<div class="row">
+							<div class="contactForm col-md-6 col-sm-12">
+								<form>
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="form-group row">
+											    <label class="control-label col-sm-4 col-xs-12" for="Fname">Full Name :</label>
+											    <div class="col-sm-8 col-xs-12">
+											    	<input type="text" class="form-control" id="Fname">
+											    </div>										    
+											</div>
+											<div class="form-group row">
+											    <label class="control-label col-sm-4 col-xs-12" for="email">E-mail :</label>
+											    <div class="col-sm-8 col-xs-12">
+											    	<input type="email" class="form-control" id="email">
+											    </div>							
+											</div>
+											<div class="form-group row">
+											    <label class="control-label col-sm-4 col-xs-12" for="msg">Message For :
+											    </label>
+											    <div class="col-sm-8 col-xs-12">
+											    	<select type="text" class="form-control" id="msg">
+												    	<option>Custom Service</option>
+												    	<option>Suggestions</option>
+												    	<option>Website Error</option>
+												    </select>
+											    </div>						
+											</div>
+											<div class="form-group row">
+											    <label class="control-label col-sm-4 col-xs-12" for="email">Office :</label>
+											    <div class="col-sm-8 col-xs-12">
+											    	<select type="text" class="form-control" id="msg">
+												    	<option>Cairo</option>
+												    	<option>Alexandria</option>
+												    </select>
+											    </div>										    
+											</div>
+											<div class="form-group row">
+											    <label class="control-label col-sm-4 col-xs-12" for="email">Message :</label>
+											    <div class="col-sm-8 col-xs-12">
+											    	<textarea class="form-control" placeholder="Message Text"></textarea>
+											    </div>										    
+											</div>
+										</div>
+											
+										<div class="col-xs-12 not-robot">
+											<div class="box">
+												<div class="col-xs-7 text-left textcol">
+													<label class="checkbox-inline"><input type="checkbox" value="">I'm not a robot</label>
+												</div>
+												<div class="col-xs-3 text-center col-xs-offset-2 photoCol">												
+														<div class="photo"><img width="30px" src="https://www.gstatic.com/recaptcha/api2/logo_48.png"></div>
+														<div class="name">reCaptcha</div>
+														<div>privacy-terms</div>			
+												</div>
+											</div>
+										</div>
+										<div class="submitBtn col-xs-12 text-right">
+											<button class="btn" type="submit">Send</button>
+										</div>			
+
+									</div> <!--Row-->
+									<!-- <div class="row"> -->
+																
+								</form>
+							</div>
+							<div class="contactMap col-md-6 col-sm-12">
+								<div class="mapouter">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13825.653880315416!2d31.25959316977539!3d29.967545200000004!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1532000343401" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>	
+	</section>
+
+	<!-- Footer -->
+	<section class="footer">
+		<div class="container">
+			<div class="title text-center">
+				<img src="images/akar-logo.png">
+				<div class="spans row ">
+					<div class="col-xs-12">
+						<ul>
+							<li>Address: cairo,Egypt</li>
+							<li>Email: info@3karMasr.com</li>
+							<li>Phone: 123456789</li>
+						</ul>
+					</div>
+
+					<!-- <div class="col-md-4 col-sm-12"><span>Address: cairo,Egypt</span></div>
+					<div class="col-md-4 col-sm-12"><span>Email: info@3karMasr.com</span></div>
+					<div class="col-md-4 col-sm-12"><span>Phone: 123456789</span></div> -->
+				</div>
+			</div>
+			<div class="row apartments">
+				<ul class="col-sm-4 col-sm-12 list-unstyled">
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+				</ul>
+				<ul class="col-sm-4 col-sm-12 list-unstyled">
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+				</ul>
+				<ul class="col-sm-4 col-sm-12 list-unstyled">
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+					<li><a href="#">Apartment For sale In Cairo</a></li>
+				</ul>
+			</div>
+
+			<div class="socialLinks text-center">
+				<ul>
+					<li><i class="i fab fa-facebook-f"></i></li>
+					<li><i class="i fab fa-google-plus-g"></i></li>
+					<li><i class="i fab fa-linkedin-in"></i></li>
+					<li><i class="i fab fa-twitter"></i></li>
+					<li><i class="i fab fa-twitter"></i></li>
+				</ul>
+			</div>
+
+			<div class="copywrites row text">
+				<ul class="list-unstyled col-md-8 col-sm-12">
+					<li class="text-capitalize"><a href="#">home</a></li>
+					<li class="text-capitalize"><a href="#">About Us</a></li>
+					<li class="text-capitalize"><a href="#">Projects</a></li>
+					<li class="text-capitalize"><a href="#">Contact Us</a></li>
+					<li class="text-capitalize"><a href="#">Terms &amp; conditions</a></li>
+				</ul>
+				<span class="col-md-4 col-xs-12 text-center">3kar Masr &copy;  2018, All Rights Reserved</span>
+			</div>
+		</div>
+	</section>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/fontawesome-all.min.js"></script> -->
+<!-- <script src="js/jquery.flexslider-min.js"></script> -->
+<script src="js/app.js"></script>
+</body>
+</html>
